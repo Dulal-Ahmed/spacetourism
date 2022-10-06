@@ -1,0 +1,72 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+    /*  Thmeme Colore */
+    .spacethemeSlatColor{
+        background: #0B0D17;
+    }
+    .spacethemeGrayColor{
+        background: #0B0D17;
+    }
+
+/*  theme font family */
+    .themeFontbellefire{
+        font-family: 'Bellefair';
+    }
+    .themeFontBarlow{
+        font-family: 'Barlow';
+    }
+/*   Theme text heading  */
+    .text150pxH{
+        font-size: 150px;
+        font-family: 'Bellefair';
+    }
+    .text100pxH{
+        font-size: 100px;
+        font-family: 'Bellefair';
+    }
+    .text56pxH{
+        font-size: 56px;
+        font-family: 'Bellefair';
+    }
+    .text32pxH{
+        font-size: 32px;
+        font-family: 'Bellefair';
+    }
+    .text28pxLetterspaceH{
+        font-size: 28px;
+        font-family: 'Barlow';
+        letter-spacing: 4.725px;
+    }
+/*  theme text sub heading  */
+.text28pxSH{
+    font-size: 28px;
+    font-family: 'Barlow Condensed';
+}
+.text18pxP{
+    font-size: 18px; 
+    font-family: 'Barlow Condensed';
+}
+.text16pxSH{
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    font-family: 'Barlow Condensed';
+}
+.text14pxSH{
+    font-size: 14px;
+    letter-spacing: 2.35px;
+    font-family: 'Barlow Condensed';
+}
+.themeBlur{
+background: rgba(255, 255, 255, 0.04);
+backdrop-filter: blur(40.7742px);
+}
+.borderwidth48{
+    outline: 88px solid gray;
+}
+
+}
