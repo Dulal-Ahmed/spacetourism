@@ -12,31 +12,38 @@
     <div >
         <img src="./image/logo.svg" alt="space loge">
     </div>
-     <div id="topnav" class=" flex justify-center items-center gap-10 themeBlur text-white w-3/5">
+    <hr class="hidden xl:flex w-1/3 absolute left-48 z-10 border border-gray-700">
+    
+    <div id="topnav" class="z-40 pl-4 pt-9  md:pl-0 md:pt-0  fixed top-0 right-0 md:top-auto md:right-auto md:relative hidden md:flex flex-col md:flex-row justify-start md:justify-center items-start md:items-center gap-0 md:gap-5 lg:gap-10 themeBlur text-white w-2/3 h-screen md:h-auto md:w-4/5 lg:w-3/5">
         
-       <a  id="home1" class=" border-white hover:border-b-2 hover:border-gray-400 py-4" href="#">00 HOME</a> 
-       <a  id="destination1" class=" border-white hover:border-b-2 hover:border-gray-400 py-4" href="#">01 DESTINATION</a> 
-       <a  id="crew1" class=" border-white hover:border-b-2 hover:border-gray-400 py-4" href="#">02 CREW</a>
-       <a  id="technology1" class=" border-white hover:border-b-2 hover:border-gray-400 py-4" href="#">03 TECHNOLOGY</a>
-
+       <a  id="home1" class=" text14pxSH border-white hover:border-b-2 hover:border-gray-400 py-4" href="#">00 HOME</a> 
+       <a  id="destination1" class=" text14pxSH border-white hover:border-b-2 hover:border-gray-400 py-4" href="#">01 DESTINATION</a> 
+       <a  id="crew1" class="text14pxSH border-white hover:border-b-2 hover:border-gray-400 py-4" href="#">02 CREW</a>
+       <a  id="technology1" class=" text14pxSH border-white hover:border-b-2 hover:border-gray-400 py-4" href="#">03 TECHNOLOGY</a>
+       <p id="crossX" class=" absolute top-3 right-4 flex md:hidden cursor-pointer">X</p>
+     </div>
+     <div id="triline" class=" flex absolute top-0 right-2 items-center md:hidden w-6 h-3 border-b border-t border-gray-400">
+       <hr class=" w-full bg-gray-50">
      </div>
    </nav>
    <main >
-      <section id="home" class=" flex w-full  relative overflow-hidden">
-           <img class=" w-full h-screen" src="./image/Bitmap.png" alt="sky image">
-           <div class="w-1/3 absolute top-40 left-28 text-white">
-            <h2 class=" text28pxSH">SO, YOU WANT TO TRAVEL TO</h2>
-            <h2 class=" text150pxH">SPACE</h2>
-            <p class=" text18pxP">Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!</p>
+      <section id="home" class=" flex w-full h-screen relative overflow-hidden bg-slate-900">
+           <img class=" w-screen h-screen rotate-90 lg:rotate-0 " src="./image/Bitmap.png" alt="sky image">
+           <div class="flex flex-col  justify-center items-center lg:items-start px-4 md:px-0 w-full md:w-2/3 lg:w-1/3 absolute top-28 left-0 md:left-32 lg:top-40 lg:left-28 text-white">
+            <h2 class="mb-3 text-2xl md:text28pxSH">SO, YOU WANT TO TRAVEL TO</h2>
+            <h2 class=" text-8xl md:text150pxH">SPACE</h2>
+            <p class="mt-2 text-sm md:text16pxSH lg:text18pxP text-center">Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!</p>
            </div>
-           <div class="flex justify-center items-center absolute bottom-32 right-52 text32pxH  w-52 h-52 bg-white hover:borderwidth48  rounded-full  ">
+           <div class="flex justify-center items-center absolute bottom-4 lg:bottom-32 right-auto left-1/3 lg:left-auto lg:right-52  text32pxH  lg:w-52 w-40 h-40 lg:h-52 bg-white lg:hover:borderwidth48  rounded-full  ">
              <h2>EXPLORE</h2>
            </div>
       </section>
 <!--  Destination Section  -->
-      <section id="destination" class="hidden w-full h-screen relative overflow-hidden">
-        <div id="destinationmenu" class="text16pxSH flex gap-4 text-gray-300 absolute right-64 top-48">
-           <a class="border-b-2 border-white hover:text-white hover:border-b-2 hover:border-gray-500" href="#moon">MOON</a>
+      <section id="destination" class="flex flex-col w-full h-screen relative overflow-hidden">
+   
+        <div id="destinationmenu" class="md:z-50 mt-52 md:mt-auto text16pxSH flex items-center md:items-start justify-center md:justify-start gap-4 text-gray-300 md:absolute right-64 top-auto md:bottom-1/2 lg:bottom-auto lg:top-48 w-full md:w-1/3">
+         
+          <a class="border-b-2 border-white hover:text-white hover:border-b-2 hover:border-gray-500" href="#moon">MOON</a>
            <a class=" border-white hover:text-white hover:border-b-2 hover:border-gray-500" href="#mars">MARS</a>
            <a class=" border-white hover:text-white hover:border-b-2 hover:border-gray-500" href="#europa">EUROPA</a>
            <a class=" border-white hover:text-white hover:border-b-2 hover:border-gray-500" href="#titan">TITAN</a>
@@ -44,20 +51,20 @@
         <img class="absolute top-0 left-0 -z-10 w-full h-screen" src="./image/moonBackgrond.jpg" alt="sky">
       <!--  moon section  -->
         <div class="flex destinationalldiv w-full ">
-            <h2 class="text28pxSH text-white absolute left-40 top-32"><span class="text28pxLetterspaceH text-gray-300">01</span> Pick your destination</h2>
+            <h2 class=" destinatontextheading"><span class="text28pxLetterspaceH text-gray-300">01</span> Pick your destination</h2>
             <div>
-              <img class=" absolute left-32 bottom-11 w-3/12 " src="./image/Moon.png" alt="Moon">
+              <img class=" destinatonimage " src="./image/Moon.png" alt="Moon">
             </div>
-            <div class="w-1/4 absolute right-36 bottom-12">
-               <h2 class=" text100pxH text-white">MOON</h2>
-               <p class="text18pxP text-gray-300">See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.</p>
-               <hr class="mt-2 border border-gray-700">
-               <div class=" mt-3 flex text-gray-300">
-                 <div class=" w-1/2">
+            <div class="textContainer ">
+               <h2 class=" text-6xl md:text100pxH text-white">MOON</h2>
+               <p class="text-sm md:text18pxP text-gray-300">See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.</p>
+               <hr class="flex mt-2 border border-gray-700 w-full">
+               <div class="w-full mt-3 flex text-gray-300">
+                 <div class=" w-1/2 flex flex-col items-center lg:items-start">
                     <h3 class=" text14pxSH">AVG. DISTANCE</h3>
                     <h2 class="text28pxSH">384,400 km</h2>
                  </div>
-                 <div class=" w-1/2">
+                 <div class="w-1/2 flex flex-col items-center lg:items-start">
                   <h3 class=" text14pxSH">Est. travel time</h3>
                   <h2 class="text28pxSH">3 days</h2>
                  </div>
@@ -66,20 +73,20 @@
           </div>
         <!--  mars Section -->
           <div class=" hidden destinationalldiv">
-            <h2 class="text28pxSH text-white absolute left-40 top-32"><span class="text28pxLetterspaceH text-gray-300">01</span> Pick your destination</h2>
+            <h2 class="destinatontextheading"><span class="text28pxLetterspaceH text-gray-300">01</span> Pick your destination</h2>
             <div>
-              <img class=" absolute left-32 bottom-11 w-3/12 " src="./image/mars.png" alt="mars">
+              <img class=" destinatonimage  " src="./image/mars.png" alt="mars">
             </div>
-            <div class="w-1/4 absolute right-36 bottom-12">
-               <h2 class=" text100pxH text-white">MARS</h2>
-               <p class="text18pxP text-gray-300">Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest!</p>
+            <div class="textContainer">
+               <h2 class=" text-6xl md:text100pxH text-white">MARS</h2>
+               <p class="text-sm md:text18pxP text-gray-300">Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest!</p>
                <hr class="mt-2 border border-gray-700">
-               <div class=" mt-3 flex text-gray-300">
-                 <div class=" w-1/2">
+               <div class="w-full mt-3 flex text-gray-300">
+                 <div class="  w-1/2 flex flex-col items-center lg:items-start">
                     <h3 class=" text14pxSH">AVG. DISTANCE</h3>
                     <h2 class="text28pxSH">225 MIL. km</h2>
                  </div>
-                 <div class=" w-1/2">
+                 <div class="  w-1/2 flex flex-col items-center lg:items-start">
                   <h3 class=" text14pxSH">Est. travel time</h3>
                   <h2 class="text28pxSH">9 months</h2>
                  </div>
@@ -88,20 +95,20 @@
           </div>
           <!--  europa Section -->
           <div class=" hidden destinationalldiv">
-            <h2 class="text28pxSH text-white absolute left-40 top-32"><span class="text28pxLetterspaceH text-gray-300">01</span> Pick your destination</h2>
+            <h2 class="destinatontextheading"><span class="text28pxLetterspaceH text-gray-300">01</span> Pick your destination</h2>
             <div>
-              <img class=" absolute left-32 bottom-11 w-3/12 " src="./image/europa.png" alt="mars">
+              <img class="  destinatonimage  " src="./image/europa.png" alt="mars">
             </div>
-            <div class="w-1/4 absolute right-36 bottom-12">
-               <h2 class=" text100pxH text-white">EUROPA</h2>
-               <p class="text18pxP text-gray-300">The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an icy surface, it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin.</p>
+            <div class="textContainer">
+               <h2 class="text-6xl md:text100pxH text-white">EUROPA</h2>
+               <p class="text-sm md:text18pxP text-gray-300">The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an icy surface, it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin.</p>
                <hr class="mt-2 border border-gray-700">
-               <div class=" mt-3 flex text-gray-300">
-                 <div class=" w-1/2">
+               <div class="w-full mt-3 flex text-gray-300">
+                 <div class="  w-1/2 flex flex-col items-center lg:items-start">
                     <h3 class=" text14pxSH">AVG. DISTANCE</h3>
                     <h2 class="text28pxSH">628 MIL. km</h2>
                  </div>
-                 <div class=" w-1/2">
+                 <div class="  w-1/2 flex flex-col items-center lg:items-start">
                   <h3 class=" text14pxSH">Est. travel time</h3>
                   <h2 class="text28pxSH">3 years</h2>
                  </div>
@@ -110,20 +117,20 @@
           </div>
           <!-- titan section  -->
           <div class=" hidden destinationalldiv">
-            <h2 class="text28pxSH text-white absolute left-40 top-32"><span class="text28pxLetterspaceH text-gray-300">01</span> Pick your destination</h2>
+            <h2 class="destinatontextheading"><span class="text28pxLetterspaceH text-gray-300">01</span> Pick your destination</h2>
             <div>
-              <img class=" absolute left-32 bottom-11 w-3/12 " src="./image/titan.png" alt="mars">
+              <img class="destinatonimage " src="./image/titan.png" alt="mars">
             </div>
-            <div class="w-1/4 absolute right-36 bottom-12">
-               <h2 class=" text100pxH text-white">TITAN</h2>
-               <p class="text18pxP text-gray-300">The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.</p>
+            <div class="textContainer">
+               <h2 class=" text-6xl md:text100pxH text-white">TITAN</h2>
+               <p class="text-sm md:text18pxP text-gray-300">The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.</p>
                <hr class="mt-2 border border-gray-700">
-               <div class=" mt-3 flex text-gray-300">
-                 <div class=" w-1/2">
+               <div class=" w-full mt-3 flex text-gray-300">
+                 <div class="  w-1/2 flex flex-col items-center lg:items-start">
                     <h3 class=" text14pxSH">AVG. DISTANCE</h3>
                     <h2 class="text28pxSH">1.6 BIL. km</h2>
                  </div>
-                 <div class=" w-1/2">
+                 <div class="  w-1/2 flex flex-col items-center lg:items-start">
                   <h3 class=" text14pxSH">Est. travel time</h3>
                   <h2 class="text28pxSH">7 years</h2>
                  </div>
@@ -132,59 +139,60 @@
           </div>
       </section>  
   <!--  End Destination Section -->
+
 <!--  start crew section -->
       <section id="crew" class=" hidden w-full h-screen relative overflow-hidden">
      
        <img class="absolute top-0 left-0 -z-10 w-full h-screen" src="./image/cre.jpg" alt="sky">
      <!--  Crew 1 -->
-       <div class="flex crawalldiv w-full ">
-           <h2 class="text28pxSH text-white absolute left-40 top-32"><span class="text28pxLetterspaceH text-gray-300">02</span> Pick your destination</h2>
+       <div class="flex-col md:flex-row items-center md:items-start crawalldiv w-full flex">
+           <h2 class="text28pxSH text-white absolute left-8 lg:left-40 top-20 lg:top-32"><span class="text28pxLetterspaceH text-gray-300">02</span> Pick your destination</h2>
            <div>
-             <img class=" absolute right-32 bottom-0 w-3/12 " src="./image/crew1.png" alt="Moon">
+             <img class=" absolute right-1/3 lg:right-32 top-1/4 md:top-auto md:bottom-0 w-3/12 " src="./image/crew1.png" alt="Moon">
            </div>
-           <div class="w-1/4 absolute left-36 bottom-28">
-              <h2 class=" text32pxH text-white">Commander </h2>
-              <h2 class=" text56pxH text-white">Douglas Hurley</h2>
-              <p class="text18pxP text-gray-300">Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.</p>
+           <div class="px-5 md:px-0 mt-56 md:mt-auto flex flex-col items-center lg:items-start w-full md:w-1/2 lg:w-2/4 absolute md:left-48 lg:left-36 bottom-auto top-28 lg:top-auto lg:bottom-28">
+              <h2 class=" crewtextContainersubhead ">Commander </h2>
+              <h2 class=" crewTextContainerHeading">Douglas Hurley</h2>
+              <p class="crewTextContainerP ">Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.</p>
            </div>    
          </div>
          <!--  crew2  -->
-       <div class="hidden crawalldiv w-full ">
-           <h2 class="text28pxSH text-white absolute left-40 top-32"><span class="text28pxLetterspaceH text-gray-300">02</span> Pick your destination</h2>
+       <div class="flex-col md:flex-row items-center md:items-start crawalldiv w-full hidden">
+           <h2 class="text28pxSH text-white absolute left-8 lg:left-40 top-20 lg:top-32"><span class="text28pxLetterspaceH text-gray-300">02</span> Pick your destination</h2>
            <div>
-             <img class=" absolute right-32 bottom-0 w-3/12 " src="./image/crew2.png" alt="Moon">
+             <img class=" absolute right-1/3 lg:right-32 top-1/4 md:top-auto md:bottom-0 w-3/12 " src="./image/crew2.png" alt="Moon">
            </div>
-           <div class="w-1/4 absolute left-36 bottom-28">
-              <h2 class=" text32pxH text-white">Mission Specialist  </h2>
-              <h2 class=" text56pxH text-white">MARK SHUTTLEWORTH</h2>
-              <p class="text18pxP text-gray-300">Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist.</p>
+           <div class="px-5 md:px-0 mt-56 md:mt-auto flex flex-col items-center lg:items-start w-full md:w-1/2 lg:w-2/4 absolute md:left-48 lg:left-36 bottom-auto top-28 lg:top-auto lg:bottom-28">
+              <h2 class=" crewtextContainersubhead">Mission Specialist  </h2>
+              <h2 class=" crewTextContainerHeading">MARK SHUTTLEWORTH</h2>
+              <p class="crewTextContainerP">Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist.</p>
            </div>    
          </div>
          <!--  crew 3 -->
-       <div class="hidden crawalldiv w-full ">
-           <h2 class="text28pxSH text-white absolute left-40 top-32"><span class="text28pxLetterspaceH text-gray-300">02</span> Pick your destination</h2>
+       <div class="flex-col md:flex-row items-center md:items-start crawalldiv w-full hidden">
+           <h2 class="text28pxSH text-white absolute left-8 lg:left-40 top-20 lg:top-32"><span class="text28pxLetterspaceH text-gray-300">02</span> Pick your destination</h2>
            <div>
-             <img class=" absolute right-32 bottom-0 w-3/12 " src="./image/crew3.png" alt="Moon">
+             <img class=" absolute right-1/3 lg:right-32 top-1/4 md:top-auto md:bottom-0 w-3/12 " src="./image/crew3.png" alt="Moon">
            </div>
-           <div class="w-1/4 absolute left-36 bottom-28">
-              <h2 class=" text32pxH text-white">PILOT </h2>
-              <h2 class=" text56pxH text-white">Victor Glover</h2>
-              <p class="text18pxP text-gray-300">Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space Station. Glover is a commander in the U.S. Navy where he pilots an F/A-18.He was a crew member of Expedition 64, and served as a station systems flight engineer. </p>
+           <div class="px-5 md:px-0 mt-56 md:mt-auto flex flex-col items-center lg:items-start w-full md:w-1/2 lg:w-2/4 absolute md:left-48 lg:left-36 bottom-auto top-28 lg:top-auto lg:bottom-28">
+              <h2 class=" crewtextContainersubhead">PILOT </h2>
+              <h2 class="crewTextContainerHeading">Victor Glover</h2>
+              <p class="crewTextContainerP">Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space Station. Glover is a commander in the U.S. Navy where he pilots an F/A-18.He was a crew member of Expedition 64, and served as a station systems flight engineer. </p>
            </div>    
          </div>
          <!--  crew 4 -->
-       <div class="hidden crawalldiv w-full ">
-           <h2 class="text28pxSH text-white absolute left-40 top-32"><span class="text28pxLetterspaceH text-gray-300">02</span> Pick your destination</h2>
+       <div class="flex-col md:flex-row items-center md:items-start crawalldiv w-full hidden">
+           <h2 class="text28pxSH text-white absolute left-8 lg:left-40 top-20 lg:top-32"><span class="text28pxLetterspaceH text-gray-300">02</span> Pick your destination</h2>
            <div>
-             <img class=" absolute right-32 bottom-0 w-3/12 " src="./image/crew4.png" alt="Moon">
+             <img class=" absolute right-1/3 lg:right-32 top-1/4 md:top-auto md:bottom-0 w-3/12 " src="./image/crew4.png" alt="Moon">
            </div>
-           <div class="w-1/4 absolute left-36 bottom-28">
-              <h2 class=" text32pxH text-white">Flight Engineer </h2>
-              <h2 class=" text56pxH text-white">Anousheh Ansari</h2>
-              <p class="text18pxP text-gray-300">Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space. </p>
+           <div class="px-5 md:px-0 mt-56 md:mt-auto flex flex-col items-center lg:items-start w-full md:w-1/2 lg:w-2/4 absolute md:left-48 lg:left-36 bottom-auto top-28 lg:top-auto lg:bottom-28">
+              <h2 class=" crewtextContainersubhead">Flight Engineer </h2>
+              <h2 class="crewTextContainerHeading">Anousheh Ansari</h2>
+              <p class="crewTextContainerP">Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space. </p>
            </div>    
          </div>
-         <div id="crawbottomButtonmenu" class=" absolute bottom-16 left-36 flex gap-2 w-72">
+         <div id="crawbottomButtonmenu" class=" absolute   bottom-72 lg:bottom-16 left-1/3 lg:left-36 flex gap-2 w-72">
           <div class="rounded-full w-4 h-4 bg-gray-50 hover:bg-gray-600"></div>
           <div class="rounded-full w-4 h-4 bg-gray-800 hover:bg-gray-600"></div>
           <div class="rounded-full w-4 h-4 bg-gray-800 hover:bg-gray-600"></div>
@@ -196,41 +204,44 @@
         <img class="absolute top-0 left-0 -z-10 w-full h-screen" src="./image/technologybackground.jpg" alt="sky">
         <!--  vehicle1 -->
            <div class="flex technologyAlldiv w-full ">
-              <h2 class="text28pxSH text-white absolute left-40 top-32"><span class="text28pxLetterspaceH text-gray-300">03</span> Pick your destination</h2>
+              <h2 class="text28pxSH text-white absolute left-8 lg:left-40 top-20 lg:top-32"><span class="text28pxLetterspaceH text-gray-300">03</span> Pick your destination</h2>
               <div>
-                <img class=" absolute right-0 bottom-24 w-3/12 " src="./image/vehicle.jpg" alt="Moon">
+                <img class=" flex lg:hidden absolute top-32  w-full " src="./image/vahicletab1.jpg" alt="Moon">
+                <img class=" hidden lg:flex absolute right-0 bottom-24 w-3/12 " src="./image/vehicle.jpg" alt="Moon">
               </div>
-              <div class="w-1/2 absolute left-72 bottom-28">
-                 <h2 class=" text16pxSH text-white">THE TERMINOLOGY… </h2>
-                 <h2 class=" text56pxH text-white">LAUNCH VEHICLE</h2>
-                 <p class="text18pxP text-gray-300">A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!</p>
+              <div class="   left-0 flex flex-col items-center lg:items-start w-full lg:w-1/2 absolute xl:left-72 lg:left-60 bottom-5 md:bottom-1/4 px-5 md:px-5 lg:px-0 lg:bottom-28">
+                 <h2 class="technologyTextContainerSubheading ">THE TERMINOLOGY… </h2>
+                 <h2 class="technologyTextContainerHeading ">LAUNCH VEHICLE</h2>
+                 <p class="technologyTextContainerP ">A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!</p>
               </div>    
             </div>
         <!--  vehicle2 -->
            <div class="hidden technologyAlldiv w-full ">
-              <h2 class="text28pxSH text-white absolute left-40 top-32"><span class="text28pxLetterspaceH text-gray-300">02</span> Pick your destination</h2>
+              <h2 class="text28pxSH text-white absolute left-8 lg:left-40 top-20 lg:top-32"><span class="text28pxLetterspaceH text-gray-300">02</span> Pick your destination</h2>
               <div>
-                <img class=" absolute right-0 bottom-24 w-3/12 " src="./image/vehicle.jpg" alt="Moon">
+                <img class=" flex lg:hidden absolute top-32  w-full " src="./image/vehicletab2.jpg" alt="Moon">
+                <img class=" hidden lg:flex absolute right-0 bottom-24 w-3/12 " src="./image/vehicle2.jpg" alt="Moon">
               </div>
-              <div class="w-1/2 absolute left-72 bottom-28">
-                <h2 class=" text16pxSH text-white">THE TERMINOLOGY… </h2>
-                <h2 class=" text56pxH text-white">SPACEPORT</h2>
-                <p class="text18pxP text-gray-300">A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth’s rotation for launch.</p>
+              <div class=" left-0 flex flex-col items-center lg:items-start w-full lg:w-1/2 absolute xl:left-72 lg:left-60 bottom-5 md:bottom-1/4 px-5 md:px-5 lg:px-0 lg:bottom-28">
+                <h2 class=" technologyTextContainerSubheading">THE TERMINOLOGY… </h2>
+                <h2 class=" technologyTextContainerHeading">SPACEPORT</h2>
+                <p class="technologyTextContainerP">A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth’s rotation for launch.</p>
              </div>     
             </div>
         <!--  vehicle3 -->
            <div class="hidden technologyAlldiv w-full ">
-              <h2 class="text28pxSH text-white absolute left-40 top-32"><span class="text28pxLetterspaceH text-gray-300">02</span> Pick your destination</h2>
+              <h2 class="text28pxSH text-white absolute left-8 lg:left-40 top-20 lg:top-32"><span class="text28pxLetterspaceH text-gray-300">02</span> Pick your destination</h2>
               <div>
-                <img class=" absolute right-0 bottom-24 w-3/12 " src="./image/vehicle.jpg" alt="Moon">
+                <img class=" flex lg:hidden absolute top-32  w-full " src="./image/vehicletab3.jpg" alt="Moon">
+                <img class=" hidden lg:flex absolute right-0 bottom-24 w-3/12 " src="./image/vehicle3.jpg" alt="Moon">
               </div>
-              <div class="w-1/2 absolute left-72 bottom-28">
-                <h2 class=" text16pxSH text-white">THE TERMINOLOGY… </h2>
-                <h2 class=" text56pxH text-white">SPACE CAPSULE</h2>
-                <p class="text18pxP text-gray-300">A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained.</p>
+              <div class=" left-0 flex flex-col items-center lg:items-start w-full lg:w-1/2 absolute xl:left-72 lg:left-60 bottom-5 md:bottom-1/4 px-5 md:px-5 lg:px-0 lg:bottom-28">
+                <h2 class=" technologyTextContainerSubheading">THE TERMINOLOGY… </h2>
+                <h2 class=" technologyTextContainerHeading">SPACE CAPSULE</h2>
+                <p class="technologyTextContainerP">A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained.</p>
              </div>     
             </div>
-            <div id="technologybuttonmenu" class=" absolute bottom-28 left-44 flex flex-col gap-2 w-72">
+            <div id="technologybuttonmenu" class=" absolute bottom-auto top-1/2 lg:top-auto lg:bottom-28 md:left-44 flex flex-row justify-center md:justify-start lg:flex-col gap-2 w-full md:w-72">
               <div class="rounded-full border border-gray-50 hover:border-gray-50 text-gray-900 w-14 h-14 flex justify-center items-center bg-gray-50 "> <p> 1 </p></div>
               <div class="rounded-full border border-gray-600 hover:border-gray-50 text-gray-300 w-14 h-14 flex justify-center items-center  "> <p> 2 </p></div>
               <div class="rounded-full border border-gray-600 hover:border-gray-50 text-gray-300 w-14 h-14 flex justify-center items-center  "> <p> 3 </p></div>

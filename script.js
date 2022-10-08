@@ -100,3 +100,14 @@ function hiddentab4(k){
    }
    }
 }
+
+let crossX = document.querySelector('#crossX');
+let triline = document.querySelector('#triline');
+
+crossX.onclick = ()=>{
+   topnav.style.display = "none";
+}
+triline.onclick = ()=>{
+   topnav.style.display = "flex";
+}
+ //  topnav
